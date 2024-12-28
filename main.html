@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    
+  <!-- main section -->
+  <main>
+    <!-- game section -->
+    <section id="games">
+      <!-- Header Section -->
+      <header>
+        <div>
+          <img
+            height="200"
+            class="hero-img w-100 object-fit-cover"
+            src="./images/wraper.png"
+            alt="hero image" />
+        </div>
+
+        <nav class="navbar w-75 navbar-expand-lg rounded-4 shadow-sm">
+          <div class="container">
+            <a class="navbar-brand d-flex text-white gap-1" href="#"
+              ><div>
+                <img
+                  width="30"
+                  height="30"
+                  src="/images/logo-sm.png"
+                  alt="logo" />
+              </div>
+              <span class="fw-semibold fs-5">Game Over</span>
+            </a>
+            <button
+              class="navbar-toggler border-white shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >mmorpg</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">shooter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">sailing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">permadeath</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">superhero</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">pixel</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-white">
+              <i id="logout-icon" class="fa-solid fa-right-from-bracket fa-lg " style="cursor: pointer;"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Hero Section -->
+      <section class="mt-5">
+        <div class="container">
+          <div
+            id="errorMessage"
+            class="alert alert-danger text-center w-50 mx-auto p-2 d-none"
+            role="alert">
+            A simple danger alert—check it out!
+          </div>
+          <div id="rowData" class="row row-cols-1 row-cols-md-4 g-4"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- loading screen -->
+    <div id="loading" class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <!-- details game section -->
+    <section id="details" class="m-3 d-none">
+      <div class="container text-white">
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline mb-3">
+            <h2>Details Game</h2>
+            <i
+              id="closeIcon"
+              style="cursor: pointer"
+              class="fa-solid fa-xmark fa-xl"></i>
+          </div>
+          <div id="detailesRow" class="row"></div>
+        </div>
+      </div>
+    </section>
+  <main>
+    <!-- Scripts -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.module.js"></script>
+  </body>
+</html>

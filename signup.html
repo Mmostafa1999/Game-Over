@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- auth section  -->
+    <section class="overlay-auth">
+      <!-- signup section -->
+
+      <!-- signup section -->
+      <section id="signup-page" class="w-50 m-auto mt-5 py-5 px-4">
+        <h1 class="text-primary text-center pb-4">Smart Login System</h1>
+        <div class="container">
+          <div class="row">
+            <div id="inner-content">
+              <div class="col">
+                <input
+                  id="userName"
+                  name="username"
+                  type="text"
+                  class="form-control mb-1 bg-transparent text-white"
+                  placeholder="Enter Your Name" />
+                <p id="userNameMessage" class="alert alert-danger mb-3 d-none">
+                  Username must be 3-15 characters long and can include letters
+                  only.
+                </p>
+              </div>
+              <div class="col">
+                <input
+                  id="userEmail"
+                  name="email"
+                  type="email"
+                  class="form-control mt-3 bg-transparent text-white"
+                  placeholder="Enter Your Email" />
+                <p id="userEmailMessage" class="alert alert-danger mt-1 d-none">
+                  Please enter a valid email address in the format:
+                  username@domain.com. The username can include letters,
+                  numbers, hyphens, and periods. The domain must include valid
+                  characters and end with a valid extension (e.g., .com, .org).
+                </p>
+              </div>
+              <div class="col">
+                <input
+                  id="userPassword"
+                  name="password"
+                  type="password"
+                  class="form-control mt-3 bg-transparent text-white"
+                  placeholder="Enter Your Password" />
+                <p
+                  id="userPasswordMessage"
+                  class="alert alert-danger mt-1 d-none">
+                  Password must be 8-32 characters long and include at least one
+                  letter and one number. Special characters are optional.
+                </p>
+              </div>
+
+              <!-- Sign Up Button -->
+              <button
+                id="signup-btn"
+                class="btn w-100 mt-3 btn-outline-primary"
+                type="button">
+                Sign Up
+              </button>
+
+              <!-- Spinner, shown when processing -->
+              <button
+                id="spinner"
+                class="btn btn-primary w-100 mt-3 d-none"
+                type="button"
+                disabled>
+                <span
+                  class="spinner-border spinner-border-sm"
+                  aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
+
+              <!-- Success and Error Messages -->
+              <p
+                id="successMessage"
+                class="snakbar-success-message bg-success text-center rounded-3 mt-3 p-2 m-auto px-0 d-none">
+                Email registered successfully
+                <i class="fa-solid fa-thumbs-up px-1"></i>
+              </p>
+              <p
+                id="errorMessage"
+                class="snakbar-success-message bg-danger text-center rounded-3 mt-3 p-2 m-auto px-0 d-none">
+                This email has already exist
+                <i class="fa-solid fa-hand px-1"></i>
+              </p>
+              <p class="text-center mt-3 text-white">
+                You have an account?
+                <a id="login-link" href="./index.html">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

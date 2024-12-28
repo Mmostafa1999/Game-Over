@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- auth section  -->
+    <section class="overlay-auth">
+      <!-- login section  -->
+      <section id="login-page" class="w-50 m-auto mt-5 py-5 px-4">
+        <h1 class="text-primary text-center pb-4">Game Over Login</h1>
+        <div class="container">
+          <div class="row">
+            <div class="inner-content">
+              <div class="col">
+                <input
+                  id="login-account"
+                  type="email"
+                  class="form-control bg-transparent text-white"
+                  placeholder="Enter Your Email" />
+                <p id="emailMessError" class="alert-danger mt-1 alert d-none">
+                  Email not found. Please register first.
+                </p>
+              </div>
+              <div class="col">
+                <input
+                  id="login-password"
+                  type="password"
+                  class="form-control mt-3 bg-transparent text-white"
+                  placeholder="Enter Your Password" />
+                <p id="passMessError" class="alert-danger alert d-none mt-1">
+                  Passwords not match. Please try again.
+                </p>
+              </div>
+              <button
+                id="login-btn"
+                class="btn w-100 mt-3 btn-outline-primary"
+                type="submit">
+                Login
+                <button
+                  id="spinner"
+                  class="btn btn-primary w-100 mt-3 d-none"
+                  type="button"
+                  disabled>
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    aria-hidden="true"></span>
+                  <span role="status">Loading...</span>
+                </button>
+              </button>
+
+              <p class="text-center mt-3 text-white">
+                Don't have an account?
+                <a id="signup-link" href="./signup.html">Sign Up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
