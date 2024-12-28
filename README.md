@@ -17,15 +17,6 @@ The Game Over App is built using HTML5, CSS3, Bootstrap, JavaScript (ES6), and O
 
 ---
 
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Contact](#contact)
-
----
 
 ## Technologies Used
 
@@ -41,10 +32,9 @@ The Game Over App is built using HTML5, CSS3, Bootstrap, JavaScript (ES6), and O
 
 ## Features
 
-- **Weather Forecast**: Displays a detailed 3-day weather forecast, including temperature, humidity, wind speed, and weather conditions (e.g., sunny, cloudy).
-- **Search Functionality**: Allows users to search for weather information by location.
-- **Real-Time Suggestions**: Provides location suggestions as users type, improving usability.
-- **Interactive Design**: Features intuitive UI components, including icons representing weather conditions.
+- **Login Requirement:** Ensures secure access to the platform by requiring users to log in before viewing the content.
+- **Game Categories**: Displays a variety of game categories fetched dynamically from an API, ensuring up-to-date and relevant content.
+- **Detailed Game Information:**: Users can click on a game to view detailed information, including its description, features, and more.
 - **Responsive Layout**: Works seamlessly across desktops, tablets, and mobile devices.
 
 ---
